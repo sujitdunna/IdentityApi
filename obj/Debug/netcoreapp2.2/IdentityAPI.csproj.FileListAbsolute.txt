@@ -1,0 +1,14 @@
+D:\Sujit\HTML\MicroServices\IdentityAPI\IdentityAPI\bin\Debug\netcoreapp2.2\IdentityAPI.deps.json
+D:\Sujit\HTML\MicroServices\IdentityAPI\IdentityAPI\bin\Debug\netcoreapp2.2\IdentityAPI.runtimeconfig.json
+D:\Sujit\HTML\MicroServices\IdentityAPI\IdentityAPI\bin\Debug\netcoreapp2.2\IdentityAPI.runtimeconfig.dev.json
+D:\Sujit\HTML\MicroServices\IdentityAPI\IdentityAPI\bin\Debug\netcoreapp2.2\IdentityAPI.dll
+D:\Sujit\HTML\MicroServices\IdentityAPI\IdentityAPI\bin\Debug\netcoreapp2.2\IdentityAPI.pdb
+D:\Sujit\HTML\MicroServices\IdentityAPI\IdentityAPI\obj\Debug\netcoreapp2.2\IdentityAPI.csprojAssemblyReference.cache
+D:\Sujit\HTML\MicroServices\IdentityAPI\IdentityAPI\obj\Debug\netcoreapp2.2\IdentityAPI.csproj.CoreCompileInputs.cache
+D:\Sujit\HTML\MicroServices\IdentityAPI\IdentityAPI\obj\Debug\netcoreapp2.2\IdentityAPI.RazorAssemblyInfo.cache
+D:\Sujit\HTML\MicroServices\IdentityAPI\IdentityAPI\obj\Debug\netcoreapp2.2\IdentityAPI.RazorAssemblyInfo.cs
+D:\Sujit\HTML\MicroServices\IdentityAPI\IdentityAPI\obj\Debug\netcoreapp2.2\IdentityAPI.AssemblyInfoInputs.cache
+D:\Sujit\HTML\MicroServices\IdentityAPI\IdentityAPI\obj\Debug\netcoreapp2.2\IdentityAPI.AssemblyInfo.cs
+D:\Sujit\HTML\MicroServices\IdentityAPI\IdentityAPI\obj\Debug\netcoreapp2.2\IdentityAPI.RazorTargetAssemblyInfo.cache
+D:\Sujit\HTML\MicroServices\IdentityAPI\IdentityAPI\obj\Debug\netcoreapp2.2\IdentityAPI.dll
+D:\Sujit\HTML\MicroServices\IdentityAPI\IdentityAPI\obj\Debug\netcoreapp2.2\IdentityAPI.pdb
