@@ -30,7 +30,8 @@ namespace IdentityAPI
             services.AddSingleton<IConfiguration>(Configuration);
 
             services.AddDbContext<IdentityDBContext>(options => {
-                options.UseSqlServer(Configuration.GetConnectionString("EventSqlConnection"));
+                options.UseInMemoryDatabase(databaseName: "EventDb");
+                //options.UseSqlServer(Configuration.GetConnectionString("EventSqlConnection"));
             });
 
             services.AddSwaggerGen(c => {
@@ -68,6 +69,8 @@ namespace IdentityAPI
                 app.UseDeveloperExceptionPage();
             }
 
+            InitializeDatabase(app);
+
             app.UseSwagger();
             if(env.IsDevelopment())
             {
@@ -79,6 +82,37 @@ namespace IdentityAPI
 
             app.UseCors();
             app.UseMvc();
+        }
+
+        private void InitializeDatabase(IApplicationBuilder app)
+        {
+            using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            {
+                var db = serviceScope.ServiceProvider.GetService<IdentityDBContext>();
+
+                db.Users.Add(new Models.UserInfo
+                {
+                    Email = "sonu@email.com",
+                    Password = "sonu123",
+                    FirstName = "sonu",
+                    LastName = "satha"
+                });
+                db.Users.Add(new Models.UserInfo
+                {
+                    Email = "sujit@email.com",
+                    Password = "sujit123",
+                    FirstName = "sujit",
+                    LastName = "D"
+                });
+                db.Users.Add(new Models.UserInfo
+                {
+                    Email = "nitish@email.com",
+                    Password = "nitish123",
+                    FirstName = "Nitish",
+                    LastName = "Lad"
+                });
+                db.SaveChanges();
+            }
         }
     }
 }
